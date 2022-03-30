@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/015a7e201e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{url_for('static',filename = 'main.css')}}">
+    <title>ML | Home</title>
+</head>
+<body>
+    <div class="row1">
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                    <a href="/Predict">Predict</a>
+                    <a href="/Reasult">Reasult</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="row2">
+        <div class="col1">
+            <h1>Linear <span>Regression !</span></h1>
+            <h2>House Price Prediction of Boston Data</h2>
+            <button class = 'btn' type="submit" onclick="window.location.href='/Predict';">Input Values</button>
+            
+        </div>
+        <div class="col2">
+            <img src="static/house.png" alt="">
+            <div class="social">
+                <a  href="https://github.com/SougataMaity/SougataMaity" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a  href="https://www.linkedin.com/in/sgtm4/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                
+                <a  href=""><i class="fa-solid fa-code" target="_blank"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+

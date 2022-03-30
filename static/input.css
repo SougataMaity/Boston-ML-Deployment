@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: cornsilk;
+}
+ul{
+    height: 40px;
+    line-height: 40px;
+    background-color: brown;
+    
+    
+}
+a{
+    display: inline;
+    float: left;
+    padding-right: 15px;
+    cursor: pointer;
+    margin-left: 50px;
+    text-decoration: none;
+    color: white;
+}
+.row2{
+    display: flex;
+}
+
+.col1{
+    margin-top: 10vh;
+    margin-left: 5vw;
+
+}
+p{
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+span{
+    margin-right: 5px;
+    color: brown;
+    font-family: fantasy;
+}
+
+.col2{
+    margin-top: 10vh;
+    margin-left: 15vw;
+}
+label{
+    display: inline-table;
+    padding: 5px;
+    width: 60px;
+}
+input{
+    height: 20px;
+    width: 80px;
+    margin-left: 15px;
+    padding-left: 10px;
+}
+form{
+    border: solid;
+    border-radius: 10px;
+    border-color: brown;
+    margin: 10px 20px;
+    padding: 40px;
+    background-color: antiquewhite;
+}
+button{
+    width: 180px;
+    margin-top: 25px;
+    padding: 3px;
+    background-color: brown;
+    color: white;
+    border-radius: 00.3cm;
+}

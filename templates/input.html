@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/015a7e201e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'input.css')}}">
+    <title>ML | Input</title>
+</head>
+<body>
+    <div class="row1">
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                    <a href="/Predict">Predict</a>
+                    <a href="/Reasult">Reasult</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="row2">
+        <div class="col1">
+            <p><span>CRIM  ></span>Per capita crime rate by town</p>
+            <p><span>INDUS ></span>Proportion of non-retail business acres per town</p>
+            <p><span>NOX ></span>Nitric oxides concentration (parts per 10 million)</p>
+            <p><span>RM ></span>Average number of rooms per dwelling</p>
+            <p><span>TAX ></span>Full-value property-tax rate per $10,000</p>
+            <p><span>LSTAT ></span>Percentage lower status of the population</p>
+        </div>
+        <div class="col2">
+            <form action="{{url_for('reasult')}}" method="post">
+                <label >CRIM</label> 
+                <input name = "var1" type="number" placeholder="   3.25" step = 0.00001 required = "required"><br>
+                <label >INDUS</label>
+                <input name = var2 type="number" placeholder="  11.14" step = 0.00001 required = "required"><br>
+                <label>NOX</label>
+                <input name = var3 type="number" placeholder="  0.55" step = 0.00001 required = "required"><br>
+                <label>RM</label>
+                <input name = var4 type="number" placeholder="  6.28" step = 0.00001 required = "required"><br>
+                <label>TAX</label>
+                <input name = var5 type="number" placeholder="  408.23"  step = 0.00001 required = "required"><br>
+                <label>LSTAT</label>
+                <input name = var6 type="number" placeholder="  12.65"  step = 0.00001 required = "required"><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
